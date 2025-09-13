@@ -17,7 +17,7 @@ It parses packets, builds tabular summaries, computes simple statistics, and gen
   - **Network graph**: IP-to-IP communication graph (NetworkX).  
     ![Network graph](evidence/evidence-packet-analysis_net_graph.png)
 - **Dependency map**: module-level diagram of call flow.  
-  ![Dependency diagram](evidence/dependency_diagram.jpeg)
+  ![Dependency diagram](evidence/dependency_diagram.png)
 
 > Core libraries used: `dpkt`, `socket`, `tabulate`, `networkx`, `matplotlib`.
 
