@@ -63,3 +63,27 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 # install libs
 pip install dpkt tabulate networkx matplotlib
 ```
+
+---
+
+## Usage
+
+Run the tool:
+```bash
+python pcap_analyser.py
+```
+
+You’ll be prompted for a path to a .pcap file. If the file is found and readable, the program parses the capture and then shows an interactive menu (7 options) to display:
+- Packet table summary
+- Packet mean / basic stats
+- Line chart of packet counts
+- IP-pair communication graph
+- and other views based on cached fields
+
+> Example charts & outputs are included under evidence/.
+
+---
+
+## Code quality
+
+A short report demonstrates pycodestyle and pylint compliance for the main modules (`pcap_analyser.py`, `packet_analysis.py`, `packet_table.py`, `plot_graph.py`, `request.py`). See [pep8 Code Quality Report](evidence/pep8-pylint-compliant-evidence.pdf). 
