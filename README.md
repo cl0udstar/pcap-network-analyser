@@ -39,3 +39,27 @@ pcap-network-analyser/
 │   └── pep8-pylint-compliant-evidence.pdf
 └── README.md
 ```
+
+---
+
+The dependency diagram shows `packet_analysis.main` invoking a `menu`, which in turn calls:
+- `packet_table.create_packet_table`
+- `packet_table.calculate_packet_mean`
+- `plot_graph.create_network_graph`
+- `plot_graph.create_line_chart`
+- plus helpers like `ip_address_pairs` and request utilities. *(See diagram)*
+
+---
+
+## Installation
+
+Python **3.8+** recommended.
+
+```bash
+# (optional) create a venv
+python3 -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# install libs
+pip install dpkt tabulate networkx matplotlib
+```
