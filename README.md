@@ -24,3 +24,18 @@ It parses packets, builds tabular summaries, computes simple statistics, and gen
 ---
 
 ## Project structure
+
+```bash
+pcap-network-analyser/
+├── pcap_analyser.py      # Entry point / CLI
+├── packet_analysis.py    # Menu & analysis orchestration
+├── packet_table.py       # Tabular summaries (tabulate)
+├── plot_graph.py         # Matplotlib line chart & NetworkX graph
+├── request.py            # Input helpers (e.g., file path prompts)
+├── evidence/
+│   ├── dependency_diagram.jpeg
+│   ├── evidence-packet-analysis_line_chart.png
+│   ├── evidence-packet-analysis_net_graph.png
+│   └── pep8-pylint-compliant-evidence.pdf
+└── README.md
+```
